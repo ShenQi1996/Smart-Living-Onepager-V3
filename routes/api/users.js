@@ -85,12 +85,15 @@ router.post("/login", (req, res) => {
     });
 });
 
-router.get('/current', passport.authenticate('jwt', {session: false}), (req, res) => {
-    res.json({
-      id: req.user.id,
-      name: req.user.name,
-      email: req.user.email
-    });
-  })
+router.get('/:id', (req, res) => {
+    User.findById(req.params.id)
+        .then(user => res.json(user))
+        .catch( err => res.json("no user matches that id"))
+});
+
+router.patch('/:id', (req, res) => {
+    const userId = { id: req.params.id };
+    
+});
 
 module.exports = router;
