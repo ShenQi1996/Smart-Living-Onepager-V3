@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "server": "nodemon index.js"
+    "server": "nodemon index.js",
+    "frontend-install": "npm install --prefix frontend",
+    "frontend": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\""
   },
   "repository": {
     "type": "git",
@@ -20,7 +23,10 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
+    "concurrently": "^6.2.0",
+    "create-react-app": "^4.0.3",
     "express": "^4.17.1",
+    "frontend": "^2.0.0-alpha.4",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.13.3",
     "passport": "^0.4.1",
