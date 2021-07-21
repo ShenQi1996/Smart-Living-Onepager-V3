@@ -4,6 +4,7 @@ const app = express();
 const mongoose = require("mongoose");
 const db = require("./config/keys").mongoURI;
 const users = require("./routes/api/users");
+const passport = require('passport');
 
 mongoose
   .connect(db, {
@@ -17,8 +18,8 @@ mongoose
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.get("/", (req, res) => res.send("Hello World"));
-
+app.use(passport.initialize());
+require('./config/passport')(passport);
 app.use("/api/users", users);
 
 const port = process.env.PORT || 5000;
