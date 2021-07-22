@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { closeModal } from "../../actions/modal_actions";
+import Login_form from "../session/login_form";
 
 const Modal = props => {
   const dispatch = useDispatch();
@@ -12,18 +13,18 @@ const Modal = props => {
   };
 
   switch (modal) {
-    case "sign in":
+    case "Sign In":
       modalForm = (
         <div>
-          This is sign in modal
+          <Login_form />
           <button onClick={handleModal}>X</button>
         </div>
       );
       break;
-    case "logn in":
+    case "Sign Up":
       modalForm = (
         <div>
-          This is logn in modal
+          This is sign up modal
           <button onClick={handleModal}>X</button>
         </div>
       );

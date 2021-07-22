@@ -1,6 +1,6 @@
 import { OPEN_MODAL, CLOSE_MODAL } from "../actions/modal_actions";
 
-export default function modalReducer(state = {}, action) {
+const modalReducer = (state = {}, action) => {
   switch (action.type) {
     case OPEN_MODAL:
       return { ...state, modal: action.modal, path: action.path };
@@ -9,4 +9,6 @@ export default function modalReducer(state = {}, action) {
     default:
       return state;
   }
-}
+};
+
+export default modalReducer;

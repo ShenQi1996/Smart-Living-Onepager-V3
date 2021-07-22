@@ -3,8 +3,8 @@ import { AuthRoute, ProtectedRoute } from "../util/route_util";
 import { Switch } from "react-router-dom";
 
 import MainPage from "./main/main_page";
-import Modal from "../components/modal/modal";
-import Navbar from "../components/nav/navbar";
+import Modal from "./modal/modal";
+import Navbar from "./nav/navbar";
 
 const App = () => (
   <>
