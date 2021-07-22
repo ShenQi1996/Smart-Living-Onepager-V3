@@ -7,6 +7,7 @@ import {
 const initialState = {
   isAuthenticated: false,
   user: {},
+  isSignedIn: false,
 };
 
 const sessionAPIReducer = (state = initialState, action) => {
@@ -16,11 +17,13 @@ const sessionAPIReducer = (state = initialState, action) => {
         ...state,
         isAuthenticated: !!action.currentUser,
         user: action.currentUser,
+        isSignedIn: true,
       };
     case RECEIVE_USER_LOGOUT:
       return {
         isAuthenticated: false,
         user: undefined,
+        isSignedIn: false,
       };
     case RECEIVE_USER_SIGN_IN:
       return {

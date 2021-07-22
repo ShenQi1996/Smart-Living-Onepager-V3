@@ -33,12 +33,7 @@ const Modal = props => {
       return null;
   }
 
-  return (
-    <div>
-      <h1> Is working !!!!</h1>
-      {modalForm}
-    </div>
-  );
+  return <div>{modalForm}</div>;
 };
 
 export default Modal;
