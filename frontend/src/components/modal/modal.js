@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { closeModal } from "../../actions/modal_actions";
-import Login_form from "../session/login_form";
+import LS_form from "../session/ls_form";
 
 const Modal = props => {
   const dispatch = useDispatch();
@@ -16,16 +16,16 @@ const Modal = props => {
     case "Sign In":
       modalForm = (
         <div>
-          <Login_form />
           <button onClick={handleModal}>X</button>
+          <LS_form form="Sign In" />
         </div>
       );
       break;
     case "Sign Up":
       modalForm = (
         <div>
-          This is sign up modal
           <button onClick={handleModal}>X</button>
+          <LS_form form="Sign Up" />
         </div>
       );
       break;
