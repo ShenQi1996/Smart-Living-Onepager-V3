@@ -11,16 +11,17 @@ const LS_form = props => {
   });
 
   const { email, password, name } = user;
-
   const errors = useSelector(state => state.sessionError.sessionError);
-
   const isSignedIn = useSelector(state => state.session.isSignedIn);
-
   const [errored, setErrored] = useState(false);
-
   const dispatch = useDispatch();
 
-  useEffect(() => {}, [errors]);
+  useEffect(() => {
+    if (isSignedIn) {
+      debugger
+      dispatch(closeModal())
+    }
+  }, [isSignedIn]);
 
   useEffect(() => {
     return () => {
@@ -42,7 +43,7 @@ const LS_form = props => {
   const handleSubmit = e => {
     e.preventDefault();
     if (errors.length === 0) {
-      dispatch(login(user)).then(dispatch(closeModal()));
+      dispatch(login(user))
     }
   };
 
@@ -68,10 +69,6 @@ const LS_form = props => {
     e.preventDefault();
     dispatch(openModal("Sign Up"));
   };
-
-  if (isSignedIn) {
-    dispatch(closeModal());
-  }
 
   const formType = props.form;
 
