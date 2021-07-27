@@ -8,9 +8,10 @@ const LS_form = props => {
     email: "",
     password: "",
     name: "",
+    password2: "",
   });
 
-  const { email, password, name } = user;
+  const { email, password, name, password2 } = user;
   const errors = useSelector(state => state.sessionError.sessionError);
   const isSignedIn = useSelector(state => state.session.isSignedIn);
   const [errored, setErrored] = useState(false);
@@ -18,8 +19,7 @@ const LS_form = props => {
 
   useEffect(() => {
     if (isSignedIn) {
-      debugger
-      dispatch(closeModal())
+      dispatch(closeModal());
     }
   }, [isSignedIn]);
 
@@ -43,7 +43,7 @@ const LS_form = props => {
   const handleSubmit = e => {
     e.preventDefault();
     if (errors.length === 0) {
-      dispatch(login(user))
+      dispatch(login(user));
     }
   };
 
@@ -150,6 +150,17 @@ const LS_form = props => {
                   value={password}
                   onChange={handleInput}
                   name="password"
+                />
+                {errors.length > 0 && <li>{errors}</li>}
+              </label>
+              <label>
+                Confirm Password:
+                <input
+                  type="password"
+                  placeholder="Confirm Password"
+                  value={password2}
+                  onChange={handleInput}
+                  name="password2"
                 />
                 {errors.length > 0 && <li>{errors}</li>}
               </label>
