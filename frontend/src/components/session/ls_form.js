@@ -122,7 +122,7 @@ const LS_form = props => {
     case "Sign Up":
       form = (
         <div>
-          <h1>Pleasse Sign Up</h1>
+          <h1>Sign Up Form</h1>
           <div>
             <form>
               <label>
