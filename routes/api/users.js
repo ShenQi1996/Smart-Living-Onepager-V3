@@ -91,9 +91,4 @@ router.get('/:id', (req, res) => {
         .catch( err => res.json("no user matches that id"))
 });
 
-router.patch('/:id', (req, res) => {
-    const userId = { id: req.params.id };
-    
-});
-
 module.exports = router;
