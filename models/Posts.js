@@ -3,13 +3,9 @@ const Schema = mongoose.Schema;
 
 const PostSchema = new Schema(
   {
-    name: {
-      type: String,
-      required: true,
-    },
-    email: {
-      type: String,
-      required: true,
+    user: {
+      type: Schema.Types.ObjectId,
+      ref: "users",
     },
     description: {
       type: String,
