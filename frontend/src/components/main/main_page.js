@@ -6,8 +6,10 @@ const MainPage = props => {
 
   return (
     <div>
-      <h1>MetalMen</h1>
-      <footer>Copyright &copy; 2021 The S&S Group</footer>
+      <section>
+        <h1>Home Page</h1>
+      </section>
+      <footer>Copyright &copy; 2021 Sam Qi</footer>
     </div>
   );
 };
