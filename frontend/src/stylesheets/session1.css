@@ -1,0 +1,76 @@
+.Session1_outter {
+  background-color: rgb(67, 92, 107);
+  height: 70vh;
+  object-fit: contain;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  object-fit: contain;
+}
+.Session1_container1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  text-align: start;
+  object-fit: contain;
+}
+.Session1_container2 {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  overflow-wrap: normal;
+  margin-top: 2rem;
+}
+
+.Session1_inner_contaner1 {
+  width: 30%;
+  text-align: center;
+  font-size: 10rem;
+  padding-left: 3rem;
+  color: rgb(206, 151, 83);
+}
+
+.Session1_inner_contaner2 {
+  width: 50%;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-right: 10rem;
+  object-fit: contain;
+  font-size: 1.2rem;
+}
+.Session1_inner_contaner2 h1 {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+.Session1_inner_contaner2 p {
+  text-align: left;
+  overflow-wrap: break-word;
+}
+
+.Session1_container2_p1 {
+  width: 15%;
+  background-size: cover;
+  background-image: url("./images/andrew-seaman-lzg7pY1ZhLo-unsplash.jpg");
+  margin-right: 3rem;
+  border-radius: 0.5rem;
+}
+
+.Session1_container2_p2 {
+  width: 15%;
+  background-size: cover;
+  background-image: url("./images/photo-1567449303098-6dc0cc40a275.jpg");
+  margin-right: 3rem;
+  border-radius: 0.5rem;
+}
+
+.Session1_container2_p3 {
+  width: 15%;
+  border-radius: 0.5rem;
+  background-size: cover;
+  background-image: url("./images/artem-page-T7OP6oIbopQ-unsplash.jpg");
+}

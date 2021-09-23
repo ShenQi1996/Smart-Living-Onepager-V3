@@ -14,6 +14,8 @@ import { logout } from "./actions/session_actions";
 
 import "./stylesheets/reset.css";
 import "./stylesheets/nav_page.css";
+import "./stylesheets/session1.css";
+import "./stylesheets/session2.css";
 
 document.addEventListener("DOMContentLoaded", () => {
   let store;

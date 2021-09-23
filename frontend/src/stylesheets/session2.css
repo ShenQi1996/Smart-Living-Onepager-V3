@@ -1,0 +1,18 @@
+.Session2_outter {
+  height: 40rem;
+  background-image: url("./images/daryan-shamkhali-pMCbPPPBSkA-unsplash.jpg");
+  background-size: cover;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Session2_box1,
+.Session2_box2,
+.Session2_box3 {
+  width: 15rem;
+  height: 20rem;
+  background: rgb(51, 59, 65);
+  margin-right: 2rem;
+  border-radius: 0.5rem;
+}

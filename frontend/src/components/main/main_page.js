@@ -1,13 +1,15 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import Session1 from "./session1/session1";
+import Session2 from "./session2/session2";
 
 const MainPage = props => {
-  const dispatch = useDispatch();
-
   return (
     <div>
       <section>
-        <h1>Home Page</h1>
+        <Session1 />
+      </section>
+      <section>
+        <Session2 />
       </section>
       <footer>Copyright &copy; 2021 Sam Qi</footer>
     </div>
