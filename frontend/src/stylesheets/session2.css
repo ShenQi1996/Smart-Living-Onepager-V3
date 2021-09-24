@@ -15,4 +15,24 @@
   background: rgb(51, 59, 65);
   margin-right: 2rem;
   border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.Session2_box1_inner1,
+.Session2_box1_inner2,
+.Session2_box1_inner3,
+.Session2_box1_inner4 {
+  height: 100%;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-right: 2rem;
+}
+
+.Session2_box1_inner1 h1 {
+  font-size: 3rem;
+  color: rgb(67, 92, 107);
 }
