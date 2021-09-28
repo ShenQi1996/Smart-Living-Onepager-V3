@@ -24,15 +24,36 @@
 
 .Session2_box1_inner1,
 .Session2_box1_inner2,
-.Session2_box1_inner3,
-.Session2_box1_inner4 {
-  height: 100%;
+.Session2_box1_inner3 {
+  height: 5rem;
   padding-left: 2rem;
   padding-top: 1rem;
   padding-right: 2rem;
+  object-fit: contain;
+  overflow-wrap: break-word;
 }
 
 .Session2_box1_inner1 h1 {
   font-size: 3rem;
   color: rgb(67, 92, 107);
+}
+.Session2_box1_inner2 {
+  color: white;
+}
+..Session2_box1_inner2 p {
+}
+.css-i4bv87-MuiSvgIcon-root {
+  color: rgb(206, 151, 83);
+  font-size: 3rem !important;
+  padding-top: 1rem;
+}
+.Session2_box1_inner4 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: white;
+  font-size: 1.2rem;
 }

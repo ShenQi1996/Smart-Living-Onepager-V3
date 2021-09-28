@@ -1,0 +1,19 @@
+.Session3_outter {
+  height: 30rem;
+  background-color: inherit;
+  display: flex;
+  padding: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.Session3_inner_box1 {
+  height: 100%;
+  background-color: white;
+  width: 60%;
+}
+.Session3_inner_box2 {
+  height: 100%;
+  background-color: bisque;
+  width: 40%;
+}
