@@ -17,6 +17,8 @@ import "./stylesheets/nav_page.css";
 import "./stylesheets/session1.css";
 import "./stylesheets/session2.css";
 import "./stylesheets/session3.css";
+import "./stylesheets/session4.css";
+import "./stylesheets/main_page.css";
 
 document.addEventListener("DOMContentLoaded", () => {
   let store;

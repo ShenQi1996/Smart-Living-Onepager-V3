@@ -90,7 +90,7 @@ const Navbar = props => {
             <h1>{page}</h1>
             <p>
               Web sites still in their infancy. Various versions have evolved
-              over the years, sometimes by accident, sometimes on purpose.
+              over the years
             </p>
             <div className="Nav_bar_button">
               <button

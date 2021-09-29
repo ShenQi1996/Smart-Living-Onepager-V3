@@ -52,24 +52,27 @@
 }
 
 .Session1_container2_p1 {
+  height: 19rem;
   width: 15%;
   background-size: cover;
   background-image: url("./images/andrew-seaman-lzg7pY1ZhLo-unsplash.jpg");
   margin-right: 3rem;
-  border-radius: 0.5rem;
+  border-radius: 0.05rem;
 }
 
 .Session1_container2_p2 {
+  height: 19rem;
   width: 15%;
   background-size: cover;
   background-image: url("./images/photo-1567449303098-6dc0cc40a275.jpg");
   margin-right: 3rem;
-  border-radius: 0.5rem;
+  border-radius: 0.05rem;
 }
 
 .Session1_container2_p3 {
+  height: 19rem;
   width: 15%;
-  border-radius: 0.5rem;
+  border-radius: 0.05rem;
   background-size: cover;
   background-image: url("./images/artem-page-T7OP6oIbopQ-unsplash.jpg");
 }

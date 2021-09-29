@@ -11,25 +11,13 @@ const Session3 = props => {
 
   switch (page) {
     case 2:
-      pics = (
-        <div>
-          <h1>Page2</h1>
-        </div>
-      );
+      pics = <div className="Session3_inner_box1_pic2"></div>;
       break;
     case 1:
-      pics = (
-        <div>
-          <h1>Page1</h1>
-        </div>
-      );
+      pics = <div className="Session3_inner_box1_pic1"></div>;
       break;
     default:
-      pics = (
-        <div>
-          <h1>Page0</h1>
-        </div>
-      );
+      pics = <div className="Session3_inner_box1_pic0"></div>;
   }
 
   return (
@@ -38,15 +26,25 @@ const Session3 = props => {
       <div className="Session3_inner_box2">
         <div className="Session3_inner_box2_container1">
           <h1>4</h1>
-          <h1> Our Projects</h1>
+          <h2> Our Projects</h2>
           <p>
             The standard chunk of Lorem Ipsum used since the 1500s is reproduced
             below for those interested.
           </p>
         </div>
         <div className="Session3_inner_box2_container2">
-          <button onClick={() => setPage(page + 1)}>+</button>
-          <button onClick={() => setPage(page - 1)}>-</button>
+          <button
+            className="Session3_inner_box2_container2_button1"
+            onClick={() => setPage(page + 1)}
+          >
+            +
+          </button>
+          <button
+            className="Session3_inner_box2_container2_button2"
+            onClick={() => setPage(page - 1)}
+          >
+            -
+          </button>
         </div>
       </div>
     </div>
