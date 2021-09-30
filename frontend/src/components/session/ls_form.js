@@ -80,7 +80,7 @@ const LS_form = props => {
         <div>
           <h1>Pleasse Sign In</h1>
           <div>
-            <form>
+            <form className="LF_form_inner_box1">
               <label>
                 Email:
                 <input
@@ -103,11 +103,15 @@ const LS_form = props => {
                 {errors.length > 0 && <li>{errors}</li>}
               </label>
 
-              <button type="submit" onClick={handleSubmit}>
+              <button
+                className="Sign_in_button"
+                type="submit"
+                onClick={handleSubmit}
+              >
                 Sign In
               </button>
             </form>
-            <div>
+            <div className="Sign_in_spam">
               <span onClick={demoSubmit}>Continue with DemoUser</span>
               <span> / </span>
               <span onClick={handleModal}>Create an account </span>
@@ -121,7 +125,7 @@ const LS_form = props => {
         <div>
           <h1>Sign Up Form</h1>
           <div>
-            <form>
+            <form className="LF_form_inner_box1">
               <label>
                 Email:
                 <input
@@ -179,7 +183,7 @@ const LS_form = props => {
       break;
   }
 
-  return <div>{form}</div>;
+  return <div className="LS_form_inner">{form}</div>;
 };
 
 export default LS_form;

@@ -19,6 +19,7 @@ import "./stylesheets/session2.css";
 import "./stylesheets/session3.css";
 import "./stylesheets/session4.css";
 import "./stylesheets/main_page.css";
+import "./stylesheets/modal.css";
 
 document.addEventListener("DOMContentLoaded", () => {
   let store;

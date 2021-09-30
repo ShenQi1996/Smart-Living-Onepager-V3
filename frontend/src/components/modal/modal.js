@@ -15,16 +15,20 @@ const Modal = props => {
   switch (modal) {
     case "Sign In":
       modalForm = (
-        <div>
-          <button onClick={handleModal}>X</button>
+        <div className="LS_form_outter">
+          <button className="LS_form_button" onClick={handleModal}>
+            X
+          </button>
           <LS_form form="Sign In" />
         </div>
       );
       break;
     case "Sign Up":
       modalForm = (
-        <div>
-          <button onClick={handleModal}>X</button>
+        <div className="LS_form_outter">
+          <button className="LS_form_button" onClick={handleModal}>
+            X
+          </button>
           <LS_form form="Sign Up" />
         </div>
       );
@@ -33,7 +37,7 @@ const Modal = props => {
       return null;
   }
 
-  return <div>{modalForm}</div>;
+  return <div className="modal_outter">{modalForm}</div>;
 };
 
 export default Modal;
