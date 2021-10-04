@@ -6,16 +6,16 @@ import Session4 from "./session4/session4";
 const MainPage = props => {
   return (
     <div>
-      <section>
+      <section id="session1">
         <Session1 />
       </section>
-      <section>
+      <section id="session2">
         <Session2 />
       </section>
-      <section>
+      <section id="session3">
         <Session3 />
       </section>
-      <section>
+      <section id="session4">
         <Session4 />
       </section>
       <footer className="main_footer">Copyright &copy; 2021 Sam Qi</footer>

@@ -32,6 +32,11 @@ body {
   color: white;
   margin-top: 20px;
   border-radius: 2px;
+  cursor: pointer;
+}
+
+.Nav_bar_signIn button:hover {
+  background-color: rgb(206, 151, 83);
 }
 .Nav_bar_container {
   color: white;
@@ -69,6 +74,7 @@ body {
   justify-content: center;
 }
 .Nav_bar_button1 {
+  cursor: pointer;
   height: 100%;
   width: 100%;
   border: none;
@@ -76,11 +82,17 @@ body {
   border-radius: 2px;
 }
 .Nav_bar_button2 {
+  cursor: pointer;
   background-color: rgb(67, 92, 107);
   height: 100%;
   width: 100%;
   border: none;
   border-radius: 2px;
+}
+
+.Nav_bar_button1:hover,
+.Nav_bar_button2:hover {
+  background-color: rgb(206, 151, 83);
 }
 .Nav_bar_page0 {
   background-image: url("./images/photo-1473777584131-937735dc793a.jpg");

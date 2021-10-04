@@ -34,6 +34,11 @@
   padding-left: 2rem;
   padding-right: 2rem;
   font-size: 1rem;
+  cursor: pointer;
+}
+
+.Session4_inner1 button:hover {
+  background-color: rgb(199, 125, 35);
 }
 
 .Session4_inner2 {

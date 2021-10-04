@@ -26,6 +26,7 @@
   margin: 0.5rem;
   font-size: 2rem;
   color: rgb(206, 151, 83);
+  cursor: pointer;
 }
 
 .LS_form_inner {
@@ -69,6 +70,11 @@
   border: none;
   font-size: 1rem;
   padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.LF_form_inner_box1 button:hover {
+  background-color: rgb(199, 125, 35);
 }
 
 .Sign_in_button {

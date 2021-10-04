@@ -54,10 +54,17 @@
 
 .Session3_inner_box2_container2_button1 {
   background-color: rgb(0, 81, 128);
+  cursor: pointer;
 }
 
 .Session3_inner_box2_container2_button2 {
   background-color: rgb(67, 92, 107);
+  cursor: pointer;
+}
+
+.Session3_inner_box2_container2_button1:hover,
+.Session3_inner_box2_container2_button2:hover {
+  background-color: rgb(206, 151, 83);
 }
 
 .Session3_inner_box1 {
